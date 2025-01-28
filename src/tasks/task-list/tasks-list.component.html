@@ -3,7 +3,7 @@
   <p>
     <select (change)="onChangeTasksFilter(filter.value)" #filter>
       <option value="all">All</option>
-      @for (option of taskStatusOption; track option.value){
+      @for (option of taskStatusOptions; track option.value){
         <option [value]="option.value">{{option.text}}</option>
       }
     </select>
