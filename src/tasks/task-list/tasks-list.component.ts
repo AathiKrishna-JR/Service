@@ -22,7 +22,7 @@ export class TasksListComponent {
       case 'in-progress':
           return this.tasksService.allTasks().filter(task => task.status === 'IN_PROGRESS');
       case 'done':
-        return this.tasksService.allTasks().filter(task => task.status === 'IN_PROGRESS');
+        return this.tasksService.allTasks().filter(task => task.status === 'DONE');
       default : 
         return this.tasksService.allTasks();
       }
