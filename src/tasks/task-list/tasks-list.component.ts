@@ -9,6 +9,7 @@ import { TasksService } from '../tasks.service';
   templateUrl: './tasks-list.component.html',
   styleUrl: './tasks-list.component.css',
   imports: [TaskItemComponent],
+  providers : 
 })
 export class TasksListComponent {
   public tasksService = inject(TasksService);
