@@ -14,7 +14,7 @@ import { TasksService } from '../../tasks.service';
 export class TaskItemComponent {
   private tasksService = inject(TasksService);
   task = input.required<Task>();
-  taskStausOptions = inject(TASK_STATUS_OPTIONS)
+  taskStautsOptions = inject(TASK_STATUS_OPTIONS)
 
   taskStatus = computed(() => {
     switch (this.task().status) {
